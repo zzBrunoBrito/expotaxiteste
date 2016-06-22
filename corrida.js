@@ -12,7 +12,7 @@ $(document).ready(function(){
     {"nome" : "11:19", idade : 15, "sexo": "masc", "login" : "meulogin", "senha" : "mypass", endereco : endereco};
 
     var corrida =
-    {usuario : usuario, taxista : taxista, "latitudeUsuario" : "12", "longitudeUsuario" : "10"};
+    {usuario : usuario.id, taxista : taxista, "latitudeUsuario" : "12", "longitudeUsuario" : "10"};
 
     console.log(JSON.stringify(corrida));
 

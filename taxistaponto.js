@@ -5,21 +5,30 @@ $(document).ready(function(){
     var taxista =
     {"nome" : "12:58", "sexo" : "trans", "login" : "loginmeu", "senha" : "minhasenhsa", carro : carro};;
 
-    var endereco =
-    {"bairro" : "bairro 11:19", "rua": "oai", "estado" : "oia", "cidade" : "oia", "numero" : "oia"};
+    var ponto =
+    {"latitude" : "40", "longitude" : "96"};
 
-    var usuario =
-    {"nome" : "11:19", idade : 15, "sexo": "masc", "login" : "meulogin", "senha" : "mypass", endereco : endereco};
 
-    var corrida =
-    {usuario : usuario, taxista : taxista, "latitudeUsuario" : "12", "longitudeUsuario" : "10"};
 
-    console.log(JSON.stringify(corrida));
+
+    var taxistaPonto =
+    {taxista : taxista.id, ponto : ponto.id};
+
+
+
+
+
+
+
+
+
+
+    console.log(JSON.stringify(taxistaPonto));
 
     $.ajax({
         type: "POST",
-        url: "https://expotaxi.herokuapp.com/corrida/add",
-        data: JSON.stringify(corrida),
+        url: "https://expotaxi.herokuapp.com/taxistaponto/add",
+        data: JSON.stringify(taxistaPonto),
         contentType: "application/json",
         dataType: "json",
         success: function(data){
