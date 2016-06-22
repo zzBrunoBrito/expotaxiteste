@@ -3,7 +3,7 @@ $(document).ready(function(){
     {"descricao" : "carro mt legal", "placa" : "12938713"};
 
     var taxista =
-    {"nome" : "taxista 2", "sexo" : "trans", "login" : "loginmeu", "senha" : "minhasenhsa", carro : carro};
+    {"nome" : "12:58", "sexo" : "trans", "login" : "loginmeu", "senha" : "minhasenhsa", carro : carro};
 
 
     $.ajax({
